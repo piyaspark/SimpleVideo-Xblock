@@ -56,10 +56,10 @@ class SimpleVideoXBlock(XBlock):
         """
         html_str = pkg_resources.resource_string(__name__, "static/html/simplevideo_edit.html")
         href = self.href or ''
-        frag = Fragment(unicode(html_str).format(href=href, maxwidth=self.maxwidth, maxheight=self.maxheight))
+        frag = Fragment(html.format(href=href, maxwidth=self.maxwidth, maxheight=self.maxheight))
 
         js_str = pkg_resources.resource_string(__name__, "static/js/simplevideo_edit.js")
-        frag.add_javascript(unicode(js_str))
+        frag.add_javascript(self.resource_string("static/js/src/simplevideo.js"))
         frag.initialize_js('SimpleVideoEditBlock')
 
         return frag
