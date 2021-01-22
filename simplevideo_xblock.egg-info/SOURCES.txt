@@ -1,0 +1,13 @@
+setup.py
+simplevideo/__init__.py
+simplevideo/simplevideo.py
+simplevideo/static/README.txt
+simplevideo/static/css/simplevideo.css
+simplevideo/static/html/simplevideo.html
+simplevideo/static/js/src/simplevideo.js
+simplevideo_xblock.egg-info/PKG-INFO
+simplevideo_xblock.egg-info/SOURCES.txt
+simplevideo_xblock.egg-info/dependency_links.txt
+simplevideo_xblock.egg-info/entry_points.txt
+simplevideo_xblock.egg-info/requires.txt
+simplevideo_xblock.egg-info/top_level.txt
