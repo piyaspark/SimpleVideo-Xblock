@@ -4,7 +4,9 @@ simplevideo/simplevideo.py
 simplevideo/static/README.txt
 simplevideo/static/css/simplevideo.css
 simplevideo/static/html/simplevideo.html
+simplevideo/static/html/simplevideo_edit.html
 simplevideo/static/js/src/simplevideo.js
+simplevideo/static/js/src/simplevideo_edit.js
 simplevideo_xblock.egg-info/PKG-INFO
 simplevideo_xblock.egg-info/SOURCES.txt
 simplevideo_xblock.egg-info/dependency_links.txt

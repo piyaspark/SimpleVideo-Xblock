@@ -44,7 +44,7 @@ class SimpleVideoXBlock(XBlock):
         if provider == 'vimeo.com':
             # Load the Froogaloop library from vimeo CDN.
             frag.add_javascript_url("//f.vimeocdn.com/js/froogaloop2.min.js")
-            js_str = pkg_resources.resource_string(__name__, "static/js/src/simplevideo.js")
+            # js_str = self.resource_string(__name__, "static/js/src/simplevideo.js")
             frag.add_javascript(self.resource_string("static/js/src/simplevideo.js"))
             frag.initialize_js('SimpleVideoXBlock')
         
@@ -59,7 +59,7 @@ class SimpleVideoXBlock(XBlock):
         frag = Fragment(html_str.format(href=href, maxwidth=self.maxwidth, maxheight=self.maxheight))
 
         js_str = self.resource_string(__name__, "static/js/simplevideo_edit.js")
-        frag.add_javascript(self.resource_string("static/js/src/simplevideo.js"))
+        frag.add_javascript(js_str)
         frag.initialize_js('SimpleVideoEditBlock')
 
         return frag
